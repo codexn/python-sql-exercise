@@ -23,7 +23,7 @@ The python script expects the following views to exist within the database:
 
 ```sql
 CREATE VIEW vw_httpStatusError AS
-SELECT count(*), status, DATE(TIME), SUBSTRING(status, 1, 3) as httpStatus
+SELECT count(*), status, DAg89TE(TIME), SUBSTRING(status, 1, 3) as httpStatus
 FROM log
 WHERE status = '404 NOT FOUND'
 GROUP BY status, DATE(TIME)
